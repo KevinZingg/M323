@@ -46,3 +46,17 @@ TBZ M323
 - **Nur ein Rückgabewert:** Die Funktion `multiplyWithRandom` gibt einen einzigen Wert zurück, das Produkt von `number` und einem zufälligen Wert.
 - **Resultat nur abhängig von übergebenen Parametern:** Das Ergebnis hängt auch von einem nicht vorhersehbaren, zufälligen Wert ab, nicht nur vom übergebenen Parameter.
 - **Verändert keine existierenden Werte:** Die Funktion verändert keinen externen Zustand oder Werte, aber ihre Unreinheit ergibt sich aus der Abhängigkeit von einer externen, nicht deterministischen Quelle.
+
+
+## Aufgabe 2 - Umschreiben von impure zu pure functions
+
+### Aufgabe 1.1 - `addToCart`
+
+**Ursprünglich (Impure):**
+- Die Funktion verändert den globalen Zustand `cartItems` durch Hinzufügen eines neuen Elements.
+
+**Transformiert (Pure):**
+```javascript
+function addToCart(cartItems, item) {
+    return [...cartItems, item];
+}
