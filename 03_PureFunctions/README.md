@@ -29,7 +29,7 @@ TBZ M323
 
 | Aufgabe | Nur ein Rückgabewert | Resultat nur abhängig von übergebenen Parametern | Verändert keine existierenden Werte | Pure oder Impure |
 |---------|:--------------------:|:------------------------------------------------:|:-----------------------------------:|:----------------:|
-| 1.3     | Ja                   | Ja                                               | Ja                                  | Pure             |
+| 1.3     | Nein                   | Ja                                               | Ja                                  | Pure             |
 
 ### Erklärung:
 - **Nur ein Rückgabewert:** Die Funktion `firstCharacter` gibt den ersten Buchstaben des übergebenen Strings zurück.
